@@ -72,7 +72,7 @@ public class AuxiliaryTester {
 
 		System.out.println("Inicio do roteiro 7.");
 		
-		//ConcreteClass2 cc4 = new ConcretClass2(7890);
+		ConcreteClass2 cc4 = new ConcreteClass2(7890);
 		ConcreteClass cc5 =  new ConcreteClass(7890);
 		AbstractClass cc6 = new ConcreteClass(7890);
 	}
