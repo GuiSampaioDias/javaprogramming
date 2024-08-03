@@ -3,15 +3,17 @@ package auxiliary;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 import main.AbstractClass;
 import main.ConcreteClass;
 import main.ConcreteClass1;
 import main.ConcreteClass2;
 import main.Enumeration;
-import main.ImmutableClass;
-import main.Tools;
-import main.Register;
 import main.GenericClass1;
+import main.GenericClass2;
+import main.ImmutableClass;
+import main.Register;
+import main.Tools;
 
 public class AuxiliaryTester {
 
@@ -160,7 +162,7 @@ public class AuxiliaryTester {
 
 		System.out.println("Fim do roteiro 10");
 		System.out.println("----------------------------------");
-
+/*
 		System.out.println("Inicio do roteiro 11.");
 		GenericClass1 gc1 = new GenericClass1();
 		gc1.setPassword(1234);
@@ -171,6 +173,20 @@ public class AuxiliaryTester {
 		GenericClass1 gc2 = new GenericClass1();
 		gc2.setPassword("SenhaLouca");
 		System.out.println(gc2);
+	*/
+		
+		GenericClass1<String> gc1 =  new GenericClass1<>();
+		gc1.setPassword("senha Maluca");
+		System.out.println(gc1.getPassword());
+		
+		GenericClass1<Integer> gc2 = new GenericClass1<>();
+		gc2.setPassword(8987);
+		System.out.println(gc2.getPassword());
+		
+		GenericClass2<Integer, String> gc3 = new GenericClass2();
+		gc3.setDescription("Nuru");
+		gc3.setPassword(123321);
+		System.out.println(gc3.getDescription() + " " + gc3.getPassword());
 		
 	}
 

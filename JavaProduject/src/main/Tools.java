@@ -19,6 +19,7 @@ public class Tools {
 		System.out.println(option);
 	}
 	*/
+	/*
 	public static void display(String str) {
 		System.out.println(str);
 		System.out.println("Este é um " +((Object) str).getClass().getName());;
@@ -31,11 +32,16 @@ public class Tools {
 		System.out.println(flo);
 		System.out.println("Este é um " +((Object) flo).getClass().getName());;
 	}
+	*/
+	public static<T> void display(T info){
+		System.out.println(info);
+	}
 	
 	public static double sum(double num1, double num2 ) {
 		double res = num1 + num2;
 		System.out.println(res);
 		return res;
 	}
+	
 	
 }
