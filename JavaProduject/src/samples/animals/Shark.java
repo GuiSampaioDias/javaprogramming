@@ -60,6 +60,14 @@ public class Shark extends Fish {
 		// TODO Auto-generated method stub
 		System.out.println("Tubarão nadando");
 	}
+
+	@Override
+	public String toString() {
+		String info =super.toString() ;
+		String subInfo = "\nNumero de Barabatanas = " + numberOfFings ;
+		
+		return info + subInfo;
+	}
 	
 	
 

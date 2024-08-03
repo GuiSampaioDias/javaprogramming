@@ -66,6 +66,12 @@ public abstract class Animal {
 	public void setMass(double mass) {
 		this.mass = mass;
 	}
+
+	@Override
+	public String toString() {
+		return "Nome Científico = " + scientificName + "\nNome Popular = " + popularName + "\nIdade = " + age + "\nmassa="
+				+ mass ;
+	}
 	
 	
 }

@@ -15,12 +15,14 @@ public class AnimalTester {
 		
 		Shark shark = new Shark("Galeocerdo couvier", "Tubarão Tigre", 20, 250.0, 2);
 		
-		System.out.println(shark.getScientificName());
+		/*System.out.println(shark.getScientificName());
 		System.out.println(shark.getPopularName());
 		System.out.println(shark.getAge());
 		System.out.println(shark.getMass());
 		System.out.println(shark.getNumberOfFings());
+		*/
 		
+		System.out.println(shark);
 		
 		shark.born();
 		shark.eat();
