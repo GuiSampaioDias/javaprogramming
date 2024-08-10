@@ -6,7 +6,7 @@ public class Tools {
 	public char alternative = 'a';// nesse caso precisamos instanciar a classe 
 	
 	//Behaviors
-	/*
+	@Annotation2
 	public static void printOption() {
 		System.out.println(option);
 	}
@@ -18,8 +18,7 @@ public class Tools {
 	public void printOp() {
 		System.out.println(option);
 	}
-	*/
-	/*
+	@Annotation2
 	public static void display(String str) {
 		System.out.println(str);
 		System.out.println("Este é um " +((Object) str).getClass().getName());;
@@ -32,8 +31,9 @@ public class Tools {
 		System.out.println(flo);
 		System.out.println("Este é um " +((Object) flo).getClass().getName());;
 	}
-	*/
-	public static<T> void display(T info){
+	
+	@Annotation1("Metodo genérico utilizado")
+	public static <T> void display(T info){
 		System.out.println(info);
 	}
 	
