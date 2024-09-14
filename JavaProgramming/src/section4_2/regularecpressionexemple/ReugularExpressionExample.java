@@ -28,10 +28,18 @@ public class ReugularExpressionExample {
 			System.out.println("Data: " + data + " não está no padrão correto");
 		}
 		
+		System.out.print("Digite um CPF: ");
+		String CPF = sc.next();
+		if(getCPF(CPF)) {
+			System.out.println("O CPF: " + CPF + " está no padrão correto");
+		}else {
+			System.out.println("O CPF: " + CPF + " não está no padrão correto");
+		}
+		
 		
 		sc.close();
 		
-		
+
 
 	}
 	public static boolean getResposta(String resposta) {
@@ -45,4 +53,7 @@ public class ReugularExpressionExample {
 		return data.matches("[0-9]{2}/[0-9]{2}/[0-9]{4}");
 	}
 
+	public static boolean getCPF(String CPF) {
+		return CPF.matches("[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}");
+	}
 }
